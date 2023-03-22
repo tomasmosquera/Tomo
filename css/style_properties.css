@@ -392,8 +392,16 @@ img {
 
     /* Inicio */
 
+    .section-a .container {
+        width: 100%;
+    }
+
     .section-a h1 {
         font-size: 36px;
+    }
+
+    #inicioPrecios h1 {
+        font-size: 28px;
     }
 
     /* Informacion */
