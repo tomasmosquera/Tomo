@@ -1,532 +1,437 @@
 :root {
-	--primary-color: #000;
-	--secondary-color: #fff;
-	--overlay-color: rgba(0, 0, 0, 0.7);
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --overlay-color: rgba(0, 0, 0, 0.7);
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	line-height: 1.6;
-	color: #000;
-	font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #000;
+    font-size: 1.1rem;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	line-height: 1.3;
+    line-height: 1.3;
 }
 
 a {
-	color: var(--secondary-color);
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 img {
-	width: 100%;
+    width: 100%;
 }
 
 .container {
-	max-width: 1100px;
-	margin: auto;
-	overflow: hidden;
-	padding: 0 2rem;
+    max-width: 1600px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
 }
 
 
 .navbar {
-	background-color: var(--primary-color);
-	font-size: 0.8rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	overflow: hidden;
-	z-index: 9999
+    background-color: var(--primary-color);
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999
 }
 
 .navbar .container {
-	display: grid;
-	grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .navbar .nav {
-	justify-self: flex-center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    justify-self: flex-center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav img {
+    display: block;
+    max-height: 20.47px;
+    width: auto;
+    height: auto;
+    justify-self: left;
 }
 
 .navbar .nav a {
-	padding: 0 1rem;
-	color: var(--secondary-color);
-	text-align: center;
-}
-
-.navbar .nav a:hover {
-	color: #dfdfdf;
-}
-
-/* Home */
-
-.section-a {
-	margin: 0 0;
-	height: 600px;
-	background-image: url("https://planner5d.com/blog/content/images/size/w2000/2022/05/darren-ahmed-arceo-jqyXMfuCBqs-unsplash.jpg");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.section-a .container {
-	display: flex;
-	grid-gap: 2rem;
-	align-items: center;
-	justify-content: center;
-	height: 600px;
-}
-
-.section-a img {
-	display: block;
-	max-width: 500px;
-	max-height: 653.625px;
-	width: auto;
-	height: auto;
-	justify-self: center;
+    padding: 0 0;
+    color: var(--secondary-color);
+    text-align: center;
 }
 
 /* Dividers */
 
 .divider {
-	background-color: var(--primary-color);
-	padding: 3rem 10rem;
+    background-color: var(--primary-color);
+    padding: 3rem 10rem;
 }
 
 .divider h1 {
-	color: var(--secondary-color);
-	text-align: center;
-	font-weight: 300;
-	font-size: 28px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 300;
+    font-size: 28px;
 }
 
-/* Servicios */
+/* Inicio */
 
-.servicios {
-	position: relative;
-	padding: 2rem 3rem;
-
+.section-a {
+    margin: 0 0;
+    height: 600px;
+    background-image: url("../img/clientes/Norten/Norten.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
-.servicios .container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 3rem;
-	align-items: center;
-	justify-content: center;
-	height: 500px;
-	text-align: center;
+.section-a .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
 }
 
-.servicios img {
-	width: 5rem;
+.section-a .infoInicial {
+    background-color: rgb(0, 0, 0, 0.6);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    height: 500px;
+    display: grid;
+    align-items: center;
 }
 
-.servicios h2 {
-	padding: 1rem;
-	font-size: 21px;
+.section-a h1 {
+    padding: 0;
+    font-size: 50px;
 }
 
-.servicios p {
-	padding: 0.2rem;
-	font-size: 16px;
-	min-height: 200px;
+.section-a h2 {
+    padding: 0rem 0rem 0.2rem 1rem;
+    font-size: 20px;
 }
 
-/* Precios */
-
-.precios {
-	position: relative;
-	padding: 4rem 3rem;
-
+.section-a h3 {
+    padding: 0rem 0rem 1.3rem 1rem;
+    font-weight: 300;
+    font-size: 16px;
 }
 
-.precios .container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 3rem 3rem;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+/* Información y Características */
+
+.informacion .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3rem 5rem;
 }
 
-.precios img {
-	width: 5rem;
+.informacion img {
+    width: 4rem;
+    justify-self: center;
 }
 
-.precios h2 {
-	padding: 0rem 1rem 0.5rem 1rem;
-	font-size: 21px;
+#vectoresInformacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.precios p {
-	padding: 0.2rem;
-	font-size: 16px;
+.informacion h1 {
+    font-size: 50px;
 }
 
-.precios .container2 {
-	display: flex;
-	grid-gap: 2rem;
-	align-items: center;
-	justify-content: center;
+.informacion h2 {
+    font-size: 18px;
 }
 
-.precios .container2 p {
-	padding: 0.2rem;
-	font-size: 12px;
+.informacion p {
+    gap: 18px;
 }
 
-/* Portafolio */
-
-.portafolio {
-	position: relative;
-	padding: 4rem 3rem;
-
+#descripcionInformacion {
+    display: grid;
+    gap: 10px;
 }
 
-.portafolio .container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 3rem 3rem;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+/* Mapa */
+
+.mapa .container {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: lightgray;
 }
 
-.portafolio h1 {
-	padding: 2rem;
-	font-size: 21px;
+/* Tour Virtual */
+
+.tourVirtual .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3rem 0 0 0;
 }
 
-.portafolio h2 {
-	font-size: 16px;
-	font-weight: 300;
+.tourVirtual h1 {
+    font-size: 50px;
+    padding: 0 5rem;
 }
 
-.portafolio p {
-	padding: 0.8rem;
-	font-size: 16px;
+/* Planos */
+
+.planosInmueble .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3rem 0 0 0;
 }
 
-.portafolio .portafolioItem a {
-	color: var(--primary-color);
+.planosInmueble h1 {
+    font-size: 50px;
+    padding: 0 5rem;
 }
 
-.portafolio .portafolioItem a:hover {
-	color: rgb(91, 91, 91);
+#planosEmbeded {
+    height: 600px;
+    text-align: center;
+    background-color: lightgray;
 }
 
-.portafolio .itemsContainer {
-	display: grid;
-	grid-template-columns: 1fr;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+/* Fotos */
+
+.fotosAlta .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3rem 0 0 0;
 }
 
-.portafolio .portafolioItem {
-	height: 330px;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+.fotosAlta h1 {
+    font-size: 50px;
+    padding: 0 5rem;
 }
 
-.portafolio img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: 300px;
-	width: 400px;
-	justify-self: center;
+#fotosEmbeded {
+    height: 600px;
+    text-align: center;
+    background-color: lightgray;
 }
+
+/* Contacto */
 
 .contacto {
-	position: relative;
-	padding: 4rem 3rem;
-
+    position: relative;
+    padding: 4rem 3rem;
 }
 
 .contacto .container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 2rem 3rem;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .contacto h1 {
-	padding: 0rem 0rem 2rem 0rem;
-	font-size: 21px;
+    padding: 0rem 0rem 2rem 0rem;
+    font-size: 50px;
 }
 
 .contacto p {
-	padding: 0.3rem;
-	font-size: 16px;
+    padding: 0.3rem;
+    font-size: 16px;
 }
 
 .contacto a {
-	color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* Footer */
 
 .section-footer {
-	background-color: var(--primary-color);
-	color: white;
-	padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
 }
 
 .section-footer p {
-	font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 
 /* Media Queries */
 
 @media (max-width: 830px) {
 
-	/* Dividers */
+    /* Inicio */
 
-	.divider {
-		background-color: var(--primary-color);
-		padding: 3rem 3rem;
-	}
+    .section-a h1 {
+        font-size: 40px;
+    }
 
-	.divider h1 {
-		color: var(--secondary-color);
-		text-align: center;
-		font-weight: 300;
-		font-size: 21px;
-	}
+    /* Informacion */
 
-	/* Servicios */
+    .informacion .container {
+        gap: 50px;
+        padding: 3rem 3rem;
+        text-align: center;
+    }
 
-	.servicios {
-		position: relative;
-		padding: 2rem 1.5rem;
+    #vectoresInformacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        gap: 3px;
+    }
 
-	}
+    .informacion h1 {
+        font-size: 40px;
+    }
 
-	.servicios .container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 1.5rem;
-		align-items: center;
-		justify-content: center;
-		height: auto;
-		text-align: center;
-	}
+    /* Tour Virtual */
 
-	.servicios img {
-		width: 5rem;
-	}
+    .tourVirtual .container {
+        text-align: center;
+    }
 
-	.servicios h2 {
-		padding: 1rem;
-		font-size: 21px;
-	}
+    .tourVirtual h1 {
+        font-size: 40px;
+    }
 
-	.servicios p {
-		padding: 0.2rem;
-		font-size: 16px;
-		min-height: 180px;
-	}
+    /* Planos */
 
-	/* Precios */
+    .planosInmueble .container {
+        text-align: center;
+    }
 
-	.precios {
-		position: relative;
-		padding: 2rem 1.5rem;
+    .planosInmueble h1 {
+        font-size: 40px;
+    }
 
-	}
+    /* Fotos */
 
-	.precios .container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 3rem 3rem;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
+    .fotosAlta .container {
+        text-align: center;
+    }
 
-	/* Portafolio */
+    .fotosAlta h1 {
+        font-size: 40px;
+    }
 
-	.portafolio {
-		position: relative;
-		padding: 2rem 1rem;
+    /* Contacto */
 
-	}
+    .contacto {
+        position: relative;
+        padding: 4rem 3rem;
+    }
 
-	.portafolio .container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 1.5rem 3rem;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
+    .contacto h1 {
+        font-size: 40px;
+    }
 
-	.portafolio h1 {
-		padding: 1rem 2rem;
-		font-size: 21px;
-	}
+    /* Footer */
 
-	.portafolio h2 {
-		font-size: 16px;
-		font-weight: 300;
-	}
+    .section-footer {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem 2rem;
+    }
 
-	.portafolio p {
-		padding: 0.8rem 2rem;
-		font-size: 16px;
-	}
+    .section-footer p {
+        font-size: 0.7rem;
+    }
 
-	.section-footer p {
-		font-size: 0.6rem;
-	}
 }
 
 @media (max-width: 540px) {
 
-	/* Navbar */
+    /* Inicio */
 
-	.navbar {
-		background-color: var(--primary-color);
-		font-size: 0.6rem;
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		overflow: hidden;
-		z-index: 9999
-	}
+    .section-a .container {
+        width: 100%;
+    }
 
-	.navbar .container {
-		padding: 0 0.5rem 0 0.5rem;
-	}
+    .section-a h1 {
+        font-size: 36px;
+    }
 
-	/* Dividers */
+    #inicioPrecios h1 {
+        font-size: 28px;
+    }
 
-	.divider {
-		background-color: var(--primary-color);
-		padding: 3rem 1rem;
-	}
+    /* Informacion */
 
-	.divider h1 {
-		color: var(--secondary-color);
-		text-align: center;
-		font-weight: 300;
-		font-size: 16px;
-	}
+    .informacion h1 {
+        font-size: 36px;
+    }
 
-	/* Servicios */
+    /* Tour Virtual */
 
-	.servicios {
-		position: relative;
-		padding: 2rem 1.5rem;
+    .tourVirtual h1 {
+        font-size: 36px;
+    }
 
-	}
+    /* Planos */
 
-	.servicios .container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 1.5rem;
-		align-items: center;
-		justify-content: center;
-		height: auto;
-		text-align: center;
-	}
+    .planosInmueble h1 {
+        font-size: 36px;
+    }
 
-	.servicios img {
-		width: 5rem;
-	}
+    /* Fotos */
 
-	.servicios h2 {
-		padding: 1rem;
-		font-size: 21px;
-	}
+    .fotosAlta h1 {
+        font-size: 36px;
+    }
 
-	.servicios p {
-		padding: 0.2rem;
-		font-size: 16px;
-		min-height: 180px;
-	}
+    /* Contacto */
 
-	/* Precios */
+    .contacto h1 {
+        font-size: 36px;
+    }
 
-	.precios {
-		position: relative;
-		padding: 2rem 1.5rem;
+    /* Footer */
 
-	}
+    .section-footer p {
+        font-size: 0.6rem;
+    }
 
-	.precios .container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 3rem 3rem;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
-
-	/* Portafolio */
-
-	.portafolio {
-		position: relative;
-		padding: 2rem 1rem;
-
-	}
-
-	.portafolio .container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 1.5rem 3rem;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
-
-	.portafolio h1 {
-		padding: 1rem 2rem;
-		font-size: 21px;
-	}
-
-	.portafolio h2 {
-		font-size: 16px;
-		font-weight: 300;
-	}
-
-	.portafolio p {
-		padding: 0.8rem 2rem;
-		font-size: 16px;
-	}
-
-	.section-footer p {
-		font-size: 0.6rem;
-	}
 }
