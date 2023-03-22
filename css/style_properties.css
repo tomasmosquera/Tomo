@@ -198,7 +198,11 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: lightgray;
+    padding: 0;
+}
+
+.mapa iframe {
+    width: 100%;
 }
 
 /* Tour Virtual */
@@ -215,10 +219,8 @@ img {
     padding: 0 5rem;
 }
 
-#tourEmbeded {
-    height: 600px;
-    text-align: center;
-    background-color: lightgray;
+.tourVirtual iframe {
+    width: 100%;
 }
 
 /* Planos */
